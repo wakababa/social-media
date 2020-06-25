@@ -1,4 +1,6 @@
 import firebase from "firebase";
+//USE .ENV FOLDER FOR SECURITY
+
 var firebaseConfig = {
     apiKey: "AIzaSyCgHJvQX7p_2TVotqaZK-lP3qANZDPpnMk",
     authDomain: "twitter-clone-35153.firebaseapp.com",

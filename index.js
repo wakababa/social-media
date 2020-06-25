@@ -7,10 +7,19 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-app.use(express.static('build'));
-// app.use(express.static('build'));
+app.use(express.static("build"));
 
-import { signUp, signIn, sendPost , allPosts , logOut , commentPost , getOnePost , likePost , home} from "./functions";
+import {
+  signUp,
+  signIn,
+  sendPost,
+  allPosts,
+  logOut,
+  commentPost,
+  getOnePost,
+  likePost,
+  home,
+} from "./functions";
 
 app.post("/signUp", signUp);
 app.post("/signIn", signIn);
@@ -23,7 +32,9 @@ app.post("/commentPost/:postId", commentPost);
 app.post("/likePost/:postId", likePost);
 
 // app.post('/userPost/:postID',getUserPost);
-app.get('*',home);
+
+app.get("*", home);
+
 app.listen(8000, () =>
   console.log(`localhost started at http://localhost:8000`)
 );

@@ -175,7 +175,8 @@ exports.getOnePost = (req,res)=>{
         data.forEach((doc)=>{
           postData.comments.push(doc.data())
         });
-        res.json(postData);
+        postData.comments.sort((a,b)=>b.createdAt-a.createdAt)
+       res.json(postData)
       })
       .catch(err=>res.json(err.message));
     }else{
