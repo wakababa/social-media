@@ -7,7 +7,7 @@
     "chance": "^1.1.6",
     "express": "^4.17.1",
     "firebase": "^7.15.4",
-    "firebase-admin": "^8.12.1",
+    "firebase-admin": "^11.4.1",
     "cors": "^2.8.5",
     "body-parser": "^1.19.0",
     "nodemon": "^2.0.4",
